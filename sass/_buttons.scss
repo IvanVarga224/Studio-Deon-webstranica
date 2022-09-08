@@ -1,0 +1,56 @@
+@mixin button_state {
+   width:88px;
+   height:40px;
+   padding:0 24px;
+   font-size:$fs-label-large;
+   border-radius:16px;
+   border:none;
+   background-color: $secondary-container;
+   color:$on-secondary-container;
+   &:hover{
+      transition:0.5s ease-out;
+      background-color: transparentize($on-secondary-container, .92); 
+      color:$on-secondary-container;
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+   }
+   &:disabled{
+      background-color:transparentize($on-surface, .88);
+      color:transparentize($on-surface, .62);
+   }
+   &:focus{
+      background-color:transparentize($on-secondary-container, .88);
+      color:$on-secondary-container;
+   }
+   &:active{
+      background-color: transparentize($on-secondary-container, .88); 
+      color:$on-secondary-container;
+   }
+}
+
+@mixin cta_button {
+            width: 200px;
+            align-self: center;
+            padding: 8px 24px 8px 16px;
+            display: flex;
+            gap: 8px;
+            justify-content: center;
+            border-radius: 20px;
+            background: linear-gradient(180deg, rgba(193, 89, 131, 0.84) 0%, #3A316E 100%);
+            border:none;
+            color:$surface;
+             @include LabelLarge;
+            &:hover{
+               transition:0.5s ease-out;
+               background: linear-gradient(180deg, rgba(204, 69, 123, 0.84) 0%, #231957 100%);
+               box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+            }
+            &:active{
+               background: linear-gradient(180deg, rgba(216, 72, 130, 0.84) 0%, #3d2b96 100%);
+            }
+}
+
+
+@mixin nav_state {
+            transition:0.2s ease-out;
+            color: $on-surface;
+}

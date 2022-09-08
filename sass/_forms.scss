@@ -1,0 +1,5 @@
+@mixin forma_stanja {
+    &:focus{
+        outline: 2px solid $primary;
+    }
+}

@@ -1,0 +1,16 @@
+@mixin flx{
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin flx-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin flx-3{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

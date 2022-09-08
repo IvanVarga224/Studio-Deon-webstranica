@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studio Deon</title>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+     <!-- https://www.devbridge.com/articles/implementing-clean-css-bem-method/ -->
+     <!-- https://blog.webdevsimplified.com/2020-05/bem/ -->
+     <!-- https://www.smashingmagazine.com/2011/09/the-guide-to-css-animation-principles-and-examples/ -->
+    <div class="container">
+        <!-- navbar -->
+        <nav class="navbar">
+            <div class="navbar__content">
+                <a href="http://127.0.0.1:5500/project/index.html" alt="Studio Deon logo" role="menuitem">
+                <img src="image/Deon_logo-f.svg" class="navbar__img"></a>
+                <ul class="navbar__list">
+                    <li class="navbar__list-item"><a href="#ponuda" role="menuitem">Ponuda</a></li>
+                    <li class="navbar__list-item"><a href="#rad" role="menuitem">Rad</a></li>
+                    <li class="navbar__list-item"><a href="#kontakti" role="menuitem">Kontakti</a></li>
+                    <li class="navbar__list-item"><a href="#partneri" role="menuitem">Partneri</a></li>
+                    <li class="navbar__list-item"><a href="#broj" role="menuitem">01/332396</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- hero -->
+        <header class="hero" id="ponuda">
+            <div class="hero__image--overlay"></div>
+            <div class="hero__text">
+                <div class="hero__cta-title">
+                    <div class="hero__cta-title-item">Studio Deon</div>
+                    <div class="hero__cta-title-item">design & Motion</div>
+                </div>
+                <div class="hero__cta-message">
+                    <div class="hero__cta-message-item">iskoristi</div>
+                    <div class="hero__cta-message-item">20% popusta</div>
+                    <div class="hero__cta-message-item">na sve</div>
+                </div>
+                <button class="hero__cta-button--active">Kupuj Sada 
+                    <img src="image/shop_cta.svg" alt="">
+                </button>
+            </div>  
+        </header>
+
+        <!-- work -->
+        <main class="work" id="rad">
+            <h2 class="work__title">Usluge</h2>
+            <div class="work__content">
+                <div class="work__cards">
+                    <!-- grafički dizajn -->
+                    <div class="work__card card-gd">
+                        <div class="card-gd__image">
+                            <img src="/project/image/work/graphic_design.png" alt="3D prikaz gumba koji levitira">
+                        </div>
+                        <h4 class="card-gd__title">Grafički Dizajn</h4>
+                        <p class="card-gd__body">
+                            Klijentima nudimo izradu upečatljivog vizualnog identiteta s naglaskom na logotip. U ponudi nalaze se još usluge pripreme materijala za tisak te print promotivnih materijala.
+                        </p>
+                    </div>
+                    <!-- motion dizajn -->
+                    <div class="work__card card-md">
+                        <div class="card-md__image">
+                            <img src="/project/image/work/motion_design.png" alt="Apstraktni prikaz gibanja">
+                        </div>
+                        <h4 class="card-md__title">Motion Dizajn</h4>
+                        <p class="card-md__body">
+                            Dizajniramo likove i pozadine, izrađujemo ilustracije ,a sve to zatim animiramo. Naša ekspertiza su animacije za TV reklame i video spotove, a također nudimo dizajn animacija i videa za društvene mreže
+                        </p>
+                    </div>
+                    <!-- Web Dizajn -->
+                    <div class="work__card card-wd">
+                        <div class="card-wd__image">
+                            <img src="/project/image/work/web_design.png" alt="Računalo u radnoj sobi">
+                        </div>
+                        <h4 class="card-wd__title">Web Dizajn</h4>
+                        <p class="card-wd__body">
+                            Atraktivnim web dizajnom omogućujemo izvrsno korisničko iskustvo svim posjetiteljima. Uz sam dizajn kupcima pružamo uslugu optimizacije web stranice za pretraživače.
+                        </p>
+                    </div>
+                    <!-- Branding -->
+                    <div class="work__card card-brn">
+                        <div class="card-brn__image">
+                            <img src="/project/image/work/branding.png" alt="apple logo">
+                        </div>
+                        <h4 class="card-brn__title">Brendiranje</h4>
+                        <p class="card-brn__body">
+                            Ukoliko želite povećati vrijednost proizvoda na tržištu javite se nama. Za Vas ćemo istražiti tržište te Vam na jednostavan način pomoći u određivanju ciljeva i akcija, a proizvod koji nudite će u vrlo kratkom roku steći prepoznatljivost.
+                        </p>
+                    </div>
+                    <!-- Ambalaža -->
+                    <div class="work__card card-amb">
+                        <div class="card-amb__image">
+                            <img src="/project/image/work/packaging.png" alt="Zamotani poklon">
+                        </div>
+                        <h4 class="card-amb__title">Ambalaža</h4>
+                        <p class="card-amb__body">
+                            Bavimo se razvojem i proizvodnjom kartonske ambalaže. Nudimo dostojnu zamjenu plastike s kvalitetno dizajniranim kartonskim rješenjima. Uz prodajnu funkciju ambalaže kupcima jamčimo zaštitnu funkciju.
+                        </p>
+                    </div>
+                    <!-- Fotografija -->
+                    <div class="work__card card-pho">
+                        <div class="card-pho__image">
+                            <img src="/project/image/work/photography.png" alt="fotoaparat">
+                        </div>
+                        <h4 class="card-pho__title">Fotografija</h4>
+                        <p class="card-pho__body">Obuhvaća usluge fotografiranja, obrade fotografija i isporuke fotografija visoke kvalitete i rezolucije korisniku. U ponudi se isključivo nalazi korporativna fotografija. Klijenti mogu birati između usluga studijske i terenske fotografije.</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- contact -->
+        <section class="contact" id="kontakti" role="contact">
+           <h2 class="contact__title">Postavi nam pitanje</h2>
+           <div class="contact__color">
+           <div class="contact__content">
+                <div class="contact__text">
+                    <h4 class="contact__title">Kontakt forma</h4>
+                    <h6 class="contact__subtitle">Za sva pitanja ili ponudu, javite se putem kontakt obrasca.</h6>
+                </div>
+                
+                 <form action="https://formsubmit.co/ivanvarga224@gmail.com" method="POST" class="contact__form form" role="form" >
+                        <div class="form__name-text">
+                            <div class="form__text">
+                                <input type="text" class="form__name" name="name" placeholder="Ime i Prezime" role=textbox required>
+                                <input type="email" class="form__mail" name="mail" placeholder="Mail" role=combobox required>
+                                <input type="hidden" name="_subject" value="Novi zahtjev!">
+                                <input type="hidden" name="_captcha" value="false">
+                            </div>
+                                <textarea rows="10" placeholder="Kako Vam možemo pomoći?" name="message" required></textarea>
+                            </div>
+                            <div class="form__submit">
+                                <input type="submit" value="Pošalji" >
+                            </div> 
+                  </form>
+           </div>
+          </div>
+        </section>
+        <!-- partners -->
+        <section class="partners" id="partneri">
+            <div class="partners__title"><h2>Partneri</h2></div>
+            <div class="partners__content">
+                <img src="image/partners/hdd_v2_final.png">
+                <img src="image/partners/viz_kultura_v2_final.png">
+                <img src="image/partners/kraš_v2_final.png">
+                <img src="image/partners/vindija-v2_final.png">
+            </div>
+        </section>
+        <footer>
+            <h6><a href="http://127.0.0.1:5501/project/index.html" role="contentinfo">Studio Deon, Zagreb</a></h6>
+        </footer>
+        <button id="btn_top"><img src="image/arrow_up.svg"></button>
+    </div>
+
+    <script src="javascript/index.js"></script>
+</body>
+</html>

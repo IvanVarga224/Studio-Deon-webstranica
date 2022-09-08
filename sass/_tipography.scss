@@ -1,0 +1,174 @@
+//Font family
+$ff-sans-serif:'Roboto', sans-serif;
+
+//Font weight
+$fw-normal: 400;
+$fw-medium: 500;
+
+//Font sizes
+//Display fonts
+$fs-display-large:3.563rem;
+$fs-display-medium:2.813rem;
+$fs-display-regular:2.25rem;
+//Headline fonts
+$fs-headline-large:2rem;
+$fs-headline-medium:1.75rem;
+$fs-headline-small:1.5rem;
+//Title fonts
+$fs-title-large:1.375rem;
+$fs-title-medium:1rem;
+$fs-title-small:0.875rem;
+//Label fonts
+$fs-label-large:0.875rem;
+$fs-label-medium:0.75rem;
+$fs-label-small:0.688rem;
+//Body fonts
+$fs-body-large:1rem;
+$fs-body-medium:0.875rem;
+$fs-body-small:0.75rem;
+//CTA section fonts
+$fs-cta-title-large:65px;
+$fs-cta-title-small:32px;
+$fs-cta-message-large:117px;
+$fs-cta-message-small:92px;
+
+//Line height
+//Display fonts
+$lh-display-large:4rem;
+$lh-display-medium:3.25rem;
+$lh-display-small:2.75rem;
+//Headline fonts
+$lh-headline-large:2.5rem;
+$lh-headline-medium:2.25rem;
+$lh-headline-small:2rem;
+//Title fonts
+$lh-title-large:1.75rem;
+$lh-title-medium:1.5rem;
+$lh-title-small:1.25rem;
+//Label fonts
+$lh-label-large:1.25rem;
+$lh-label-medium:1rem;
+$lh-label-small:1rem;
+//Body fonts
+$lh-body-large:1.5rem;
+$lh-body-medium:1.25rem;
+$lh-body-small:1rem;
+
+//Letter spacing
+$ls-title-medium:0.15%;
+$ls-title-small:0.1%;
+$ls-label-large:0.1%;
+$ls-label-medium:0.5%;
+$ls-label-small:0.5%;
+$ls-body-large:0.5%;
+$ls-body-medium:0.25%;
+$ls-body-small:0.4%;
+
+//scss mixin
+@mixin DisplayLarge {
+    font-size: 3.563rem;
+    line-height: 4rem;
+}
+
+@mixin DisplayMedium {
+    font-size: 2.813rem;
+    line-height: 3.25rem;
+}
+
+@mixin DisplaySmall {
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+}
+
+@mixin HeadlineLarge {
+    font-size: 2rem;
+    line-height: 2.5rem;
+}
+
+@mixin HeadlineMedium {
+    font-size: 1.75rem;
+    line-height: 2.25rem;
+}
+
+@mixin HeadlineSmall {
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+@mixin TitleLarge {
+    font-size: 1.375rem;
+    line-height: 1.75rem;
+}
+
+@mixin TitleMedium {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    letter-spacing: 0.15%;
+    font-weight: 500;
+}
+
+@mixin TitleSmall {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    letter-spacing: 0.1%;
+    font-weight: 500;
+}
+
+@mixin LabelLarge{
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    letter-spacing: 0.1%;
+}
+
+@mixin LabelMedium{
+    font-size: 0.75rem;
+    line-height: 1rem;
+    letter-spacing: 0.5%;
+    font-weight: 500;
+}
+
+@mixin LabelSmall{
+    font-size: 0.688rem;
+    line-height: 1rem;
+    letter-spacing: 0.5%;
+    font-weight: 500;
+}
+
+@mixin BodyLarge{
+    font-size: 1rem;
+    line-height: 1.5rem;
+    letter-spacing: 0.5%;
+}
+
+@mixin BodyMedium{
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    letter-spacing: 0.25%;
+}
+
+@mixin BodySmall{
+    font-size: 0.75rem;
+    line-height: 1rem;
+    letter-spacing: 0.4%;
+}
+
+@mixin CtaTitleLarge{
+    font-size: 65px;
+}
+
+@mixin CtaTitleSmall{
+    font-size: 32px;
+    text-transform:uppercase;
+}
+
+@mixin CtaMessageLarge{
+    font-size: 117px;
+}
+
+@mixin CtaMessageSmall{
+    font-size: 92px;
+    text-transform:uppercase;
+}
+
+
+
